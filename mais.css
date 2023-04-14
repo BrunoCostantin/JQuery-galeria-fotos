@@ -1,0 +1,87 @@
+* { /* * serve para da um regra geral*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif; /*puxa a fonte*/
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px;
+    color: #fff;
+    display: flex ; /* para deixad o botão ao lado do titulo*/
+    border-bottom: 16px solid #341f97;
+    justify-content: center;   /*centraliza no meio da pag*/
+    text-transform: uppercase; /*tranforma todo o texto me maiuscolu*/
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px; /*aplica uma margem no bottão para não ficar na colado*/
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center; /*para deixar o texto centralizado*/
+    display: none;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    cursor: pointer; /* o cursor do mouse vira a mãozinha quando posicionado em cima*/
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex; /*para os elementos dentro da ul fiquem do lado um do outro*/
+    flex-wrap: wrap; /*quebra de linha quando chega no fim da tela*/
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none; /*remove a bolinha*/
+    position: relative;
+    max-height: 280px; /*altura max*/
+    overflow-y: hidden; /* oculta o pedaço da img que ultrapassa o li*/
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-image-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7); /*tranparencia*/
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.5s; /*transição para aparecer o texto <a>*/
+}
+
+.overlay-image-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-image-link {
+    opacity: 1; /*para aperecer a escrita do <a> quando passa o mouse emcima*/
+}
