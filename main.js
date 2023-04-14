@@ -28,6 +28,6 @@ $(document).ready(function(){ //usado para chamar o JQuery para nosso código
         `).appendTo(novoItem)
         $(novoItem).appendTo("ul")
         $(novoItem).fadeIn(1000) // faz com que a imgaem aparece suavemente
-        $(`#endereco-imagem-nova`).val(" ") //limpa o lonk das novas img apos cadastra-las
+        $(`#endereco-imagem-nova`).val(" ") //limpa o link das novas img apos cadastra-las
     })
 })
